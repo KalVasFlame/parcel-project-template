@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\svg\\products-dots.svg":[["products-dots.98b4ca9a.svg","images/svg/products-dots.svg"],"images/svg/products-dots.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\ellipse_hero@x2.png":[["ellipse_hero@x2.49e20f49.png","images/ellipse_hero@x2.png"],"images/ellipse_hero@x2.png"],"./..\\images\\icecreame_hero@x2.png":[["icecreame_hero@x2.22830545.png","images/icecreame_hero@x2.png"],"images/icecreame_hero@x2.png"],"./..\\images\\hero-girl.png":[["hero-girl.aac8b3f9.png","images/hero-girl.png"],"images/hero-girl.png"],"./..\\images\\icecreame_hero.png":[["icecreame_hero.d91d0b64.png","images/icecreame_hero.png"],"images/icecreame_hero.png"],"./..\\images\\ellipse_hero.png":[["ellipse_hero.b3fdddad.png","images/ellipse_hero.png"],"images/ellipse_hero.png"],"./..\\images\\bidon-moloka.png":[["bidon-moloka.3b60ee0f.png","images/bidon-moloka.png"],"images/bidon-moloka.png"],"./..\\images\\svg\\products-dots.svg":[["products-dots.98b4ca9a.svg","images/svg/products-dots.svg"],"images/svg/products-dots.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63839" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57449" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
