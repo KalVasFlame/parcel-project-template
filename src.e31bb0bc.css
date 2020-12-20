@@ -1962,7 +1962,7 @@ main {
 }
 
 .shops-btn {
-  display: inline-block;
+  display: block;
   margin-right: auto;
   margin-left: auto;
   padding-top: 10px;
@@ -1986,6 +1986,7 @@ main {
 }
 
 .btn-loc {
+  display: inline-block;
   margin-bottom: 10px;
   border-radius: 22px;
   border-color: transparent;
