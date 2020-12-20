@@ -70,6 +70,7 @@ li {
   bottom: 3%;
   right: 3%;
   display: none;
+  z-index: 3;
   text-indent: -9999px;
   background: url("/icon_top.9c7abca8.png") no-repeat;
 }
@@ -1196,7 +1197,7 @@ main {
     background-size: contain;
     background-position: center;
     padding-top: 125px;
-    padding-bottom: 350px;
+    padding-bottom: 440px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -1422,17 +1423,17 @@ main {
 }
 
 .galery {
+  z-index: 2;
   position: relative;
-  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .galery {
-    padding-bottom: 100px;
+    padding-bottom: 130px;
   }
 }
 @media screen and (min-width: 1200px) {
   .galery {
-    padding-bottom: 100px;
+    padding-bottom: 180px;
   }
 }
 
@@ -1447,6 +1448,8 @@ main {
     left: 0;
     right: 0;
     top: -110%;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
