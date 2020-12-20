@@ -1423,7 +1423,6 @@ main {
 
 .galery {
   position: relative;
-  padding-bottom: 100px;
   z-index: 1000;
 }
 @media screen and (min-width: 768px) {
@@ -1438,18 +1437,15 @@ main {
 }
 
 .galery-container {
-  position: absolute;
-  top: -50%;
-  left: 0;
-  right: 0;
-}
-@media screen and (min-width: 400px) {
-  .galery-container {
-    top: -75%;
-  }
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .galery-container {
+    display: block;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    right: 0;
     top: -110%;
   }
 }
@@ -1514,6 +1510,12 @@ main {
 
 .big-img {
   width: calc((100% - 14px) / 7 * 2);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-galery {
+    display: none;
+  }
 }
 
 .slider {
