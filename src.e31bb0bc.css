@@ -162,25 +162,25 @@ li {
   top: 0;
   right: 0;
   width: 250px;
-  height: 502px;
+  height: 100vh;
   padding-top: 23px;
   z-index: 99;
   background: #e17992;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-container {
     width: 254px;
-    height: 1020px;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
     position: relative;
     flex-grow: 2;
-    height: auto;
     margin-left: 212px;
     padding: 0;
     background: none;
+    height: auto;
   }
 }
 
@@ -189,11 +189,20 @@ li {
 }
 
 .menu-container.menu-hidden {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+@media screen and (max-width: 1199px) {
+  .menu-container.menu-hidden {
+    transform: translate(80%, 0%);
+    pointer-events: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-container.menu-hidden {
     display: flex;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -246,7 +255,10 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .button-buy {
-    margin-left: 100px;
+    position: absolute;
+    top: -12px;
+    right: 115px;
+    z-index: 100;
   }
 }
 
@@ -306,6 +318,10 @@ li {
 
 .current {
   color: #d41443;
+}
+
+.menu-open .hide {
+  display: none;
 }
 
 .hero-red-button, .hero-white-button {
@@ -2209,6 +2225,12 @@ main {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 0.5s;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    top: 0;
+    transform: translate(-50%, 0) scale(0.75);
+  }
 }
 @media screen and (min-width: 480px) {
   .modal {
