@@ -1,4 +1,9 @@
-.slider {
+// .slider-section {
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 180px;
+//   }
+// }
+.slider-section {
   padding-top: 100px;
   margin-left: auto;
   margin-right: auto;
@@ -22,6 +27,12 @@
   @media screen and (max-width: 767px) {
     max-width: 280px;
     min-height: 540px;
+  }
+  @media screen and (min-width: 1900px) {
+    padding-top: 500px;
+  }
+  @media screen and (min-width: 2300px) {
+    padding-top: 750px;
   }
 }
 
